@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agregar Alumno</title>
+</head>
+<body>
+    <h2>Agregar Alumno</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Guardar</button>
+    </form>
+    <a href="/curso/">Ir a agregar curso</a> | <a href="/nota/">Ir a agregar nota</a>
+</body>
+</html>
